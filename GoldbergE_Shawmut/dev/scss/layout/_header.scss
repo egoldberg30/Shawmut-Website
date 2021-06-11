@@ -1,0 +1,25 @@
+/* =============
+    Header
+============= */
+header{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". header .";
+    background-color: $nightDark;
+    >div{
+        grid-area: header;
+         padding: 15px;
+		
+        img {
+            width: 96px;
+
+            @include md {
+                width: 123px;
+            }
+
+            @include lg {
+                width: 150px;
+            }
+        }
+    }
+}
